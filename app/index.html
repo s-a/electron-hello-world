@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello World!</title>
+    <title>Nice Example!</title>
   </head>
   <body>
     <h1>Hello World!</h1> 
@@ -11,5 +11,10 @@
   <script>
     var remote = require('remote');
     console.log('app version ' + remote.require('app').getVersion());
+  </script>
+  <script>
+    var Test = require('./test');
+    var test = new Test.Test();
+    console.log('test.foo = ' + test.helloWorld("bar"));
   </script>
 </html>
